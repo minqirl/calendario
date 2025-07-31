@@ -1,40 +1,5 @@
-.lace-border {
-    image-rendering: pixelated;
-    display: flex;
-    border-image: url(https://file.garden/Z-8B3Z-zNAsQ37MB/graphics/SP-1.png); 
-  /* i made the border image myself, but feel free to use it! */
-    border-image-slice: 200;
-    border-image-width: 200px;
-    border-image-repeat: round;
-    border-style: solid;
-    border-radius: 5px;
-    background: white;
-    width: auto;
-}
-
-.dashed-border {
-  border: 1px dashed;
-  border-radius: 2px;
-  width: -webkit-fill-available;
-  padding: 3px;
-}
-@font-face {
-  font-family: 'MiFuente';
-  src: url('https://minqirl.github.io/calendario/PressStart2P.ttf') format('truetype');
-}
-
-.mi-clase {
-  font-family: 'MiFuente';
-}
-.calendar-day {
-  font-family: 'MiFuente', sans-serif;
-}
-
-/**/
 @font-face {font-family: 'minecraft';
   src: url('https://minqirl.github.io/calendario/@font-face}{
   font-family: 'minecraft';
-  src: url('https://minqirl.github.io/calendario/Minecraft.ttf') format('truetype');
-}
-') format('truetype');
-}
+  src: url('https://minqirl.github.io/calendario/Minecraft.ttf') format('truetype');}
+') format('truetype');}
