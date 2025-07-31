@@ -1,15 +1,13 @@
 .lace-border {
-    image-rendering: pixelated;
-    display: flex;
-    border-image: url(https://file.garden/Z-8B3Z-zNAsQ37MB/graphics/SP-1.png); 
-  /* i made the border image myself, but feel free to use it! */
-    border-image-slice: 35;
-    border-image-width: 35px;
-    border-image-repeat: round;
-    border-style: solid;
-    border-radius: 15px;
-    background: white;
-    width: auto;
+  image-rendering: pixelated;
+  display: flex;
+  border-style: solid;
+  border-width: 30px; /* define el grosor del borde para que pueda dibujarse */
+  border-image-source: url(https://file.garden/Z-8B3Z-zNAsQ37MB/graphics/SP-1.png);
+  border-image-slice: 30; /* ajustar según el diseño de la imagen */
+  border-image-repeat: round;
+  border-radius: 5px;
+  background: white;
 }
 
 .dashed-border {
@@ -18,23 +16,21 @@
   width: -webkit-fill-available;
   padding: 3px;
 }
+
 @font-face {
   font-family: 'MiFuente';
   src: url('https://minqirl.github.io/calendario/PressStart2P.ttf') format('truetype');
 }
 
-.mi-clase {
-  font-family: 'MiFuente';
-}
-.calendar-day {
-  font-family: 'MiFuente', sans-serif;
-}
-
-/**/
-@font-face {font-family: 'minecraft';
-  src: url('https://minqirl.github.io/calendario/@font-face}{
+@font-face {
   font-family: 'minecraft';
   src: url('https://minqirl.github.io/calendario/Minecraft.ttf') format('truetype');
 }
-') format('truetype');
+
+.mi-clase {
+  font-family: 'MiFuente';
+}
+
+.calendar-day {
+  font-family: 'MiFuente', sans-serif;
 }
