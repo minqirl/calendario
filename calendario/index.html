@@ -1,47 +1,42 @@
 <style>
 <style>
-  @font-face {
+ @font-face {
     font-family: 'minecraft';
     src: url('https://minqirl.github.io/calendario/Minecraft.ttf') format('truetype');
   }
 
-  td {
-    font-family: 'minecraft', monospace !important;
-    font-size: 15px;
-    color: #C2F0C2;
-    background-image: url('https://minqirl.github.io/calendario/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png');
-    background-size: cover;
-    text-shadow:
+    td{
+        font-family: 'minecraft', monospace !important;
+      background-image:url('https://minqirl.github.io/calendario/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(4).png');
+        color:#B3C9F7;
+          text-shadow:
       -1px -1px 0 #FFFFFF,
        1px -1px 0 #FFFFFF,
       -1px  1px 0 #FFFFFF,
        1px  1px 0 #FFFFFF;
-  }
-</style>
-</style> 
+    }
  
+</style> 
+
 <!--CODE-->
-  <div id="calendar-container" class="mi-clase">
+
+    <div id="calendar-container">
 <div id="MyClockDisplay" class="clock lace-border" onload="showTime()" 
-  style="
-    font-size: 15px;
-    -webkit-text-stroke: 0.3px black;
-    letter-spacing: 2px;
-    text-align: center;
-    background-image:url('https://minqirl.github.io/calendario/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(3).png');
-    background-size: cover;
-    background-position: center;
-    width: 200px;
-    margin-left: 0px;
-    color: #FFCCE5;">
-  </div>
-</div>
+style="font-family: 'minecraft', monospace !important;font-size: 20px; 
+background-image:url('https://minqirl.github.io/calendario/green.png');width:193px;margin-left:0px;
+   color:#FFCCE5;
+       text-shadow:
+      -1px -1px 0 #FFFFFF,
+       1px -1px 0 #FFFFFF,
+      -1px  1px 0 #FFFFFF,
+       1px  1px 0 #FFFFFF;"
+     ></div>
 
 <script type="text/javascript">function showTime(){
     var date = new Date();
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds (); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
     var session = "AM";
     
     if(h == 0){
@@ -66,7 +61,7 @@
 }
 
 showTime();</script>
-<div class="calendar" align="center" style="background-color: #CCE6FF;border: 3px ridge #B3C9F7;color:#888888;font-size: 12px;">
+<div class="calendar" align="center" style="background-color: #eaeaea;border: 3px ridge #ffffff;color:black;font-size: 15px;">
 <script text="JavaScript">
  
 monthnames = new Array(
@@ -127,7 +122,7 @@ startspaces = thisday - startspaces + 1;
 if (startspaces < 0) {
   startspaces += 7;
 }
-document.write("<font face='Arial'>");
+document.write("<font face='arial'>");
 document.write('<table border=0 ');
 document.write(' style="text-align: center;" cellpadding=2 cellspacing=4>');
 document.write(
@@ -164,7 +159,7 @@ while (count <= monthdays[thismonth]) {
       }
     }
     if (count === thisdate) {
-      document.write("<b><font color='#B3C9F7'></b>");
+      document.write("<b><font color='#000'></b>");
     }
     if (count <= monthdays[thismonth]) {
       document.write(count);
