@@ -3,11 +3,11 @@
     display: flex;
     border-image: url(https://file.garden/Z-8B3Z-zNAsQ37MB/graphics/SP-1.png); 
   /* i made the border image myself, but feel free to use it! */
-    border-image-slice: 5;
-    border-image-width: 5px;
+    border-image-slice: 35;
+    border-image-width: 35px;
     border-image-repeat: round;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 15px;
     background: white;
     width: auto;
 }
